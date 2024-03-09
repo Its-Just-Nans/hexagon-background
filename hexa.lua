@@ -9,17 +9,18 @@ local function generate()
     if #arg < 1 then
         filename = ""
     end
-
+    local stroke = "black"
+    local strokeWidth = 5
     local style = sp(4) .. "<style>\n"
     local count = 4
-    style = style .. "*{\n"
+    style = style .. sp(4) .. "*{\n"
     for i = 0, count do
         local r = i * 50
         local g = i * 50
         local b = 255 - i * 50
-        style = style .. string.format("--color%d: rgb(%d, %d, %d);\n", i + 1, r, g, b)
+        style = style .. sp(8) .. string.format("--hexa-color%d: rgb(%d, %d, %d);\n", i + 1, r, g, b)
     end
-    style = style .. "}\n"
+    style = style .. sp(4) .. "}\n"
     local indexex = {
         { 1, 2, 2, 2, 2 },
         { 2, 3, 3, 3, 2 },
@@ -36,7 +37,7 @@ local function generate()
         for col = 1, colNumber do
             local hexaNumber = (line - 1) * colNumber + col
             local colorNumber = array[col]
-            style = style .. string.format(".hexa-%d { fill: var(--color%s); }\n", hexaNumber, colorNumber)
+            style = style .. sp(4) .. string.format(".hexa-%d { fill: var(--hexa-color%s); }\n", hexaNumber, colorNumber)
         end
     end
     style = style .. sp(4) .. "</style>\n"
@@ -51,9 +52,12 @@ local function generate()
 
     local content = ""
     content = content .. sp(4) ..
-        string.format("<g transform=\"translate(%s, %s)\" stroke-width=\"5\"  stroke=\"grey\">\n",
+        string.format("<g transform=\"translate(%s, %s)\" stroke-width=\"%s\"  stroke=\"%s\">\n",
             -10,
-            -45)
+            -45,
+            strokeWidth,
+            stroke
+        )
     for line = 1, lineNumber do
         content = content .. sp(4 * 2) ..
             string.format("<g transform=\"translate(%s, %s)\">\n",

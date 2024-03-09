@@ -1,50 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" height="440" width="450">
     <style>
-*{
---color1: rgb(0, 0, 255);
---color2: rgb(50, 50, 205);
---color3: rgb(100, 100, 155);
---color4: rgb(150, 150, 105);
---color5: rgb(200, 200, 55);
-}
-.hexa-1 { fill: var(--color1); }
-.hexa-2 { fill: var(--color2); }
-.hexa-3 { fill: var(--color2); }
-.hexa-4 { fill: var(--color2); }
-.hexa-5 { fill: var(--color2); }
-.hexa-6 { fill: var(--color2); }
-.hexa-7 { fill: var(--color3); }
-.hexa-8 { fill: var(--color3); }
-.hexa-9 { fill: var(--color3); }
-.hexa-10 { fill: var(--color2); }
-.hexa-11 { fill: var(--color2); }
-.hexa-12 { fill: var(--color3); }
-.hexa-13 { fill: var(--color4); }
-.hexa-14 { fill: var(--color4); }
-.hexa-15 { fill: var(--color3); }
-.hexa-16 { fill: var(--color3); }
-.hexa-17 { fill: var(--color4); }
-.hexa-18 { fill: var(--color5); }
-.hexa-19 { fill: var(--color4); }
-.hexa-20 { fill: var(--color3); }
-.hexa-21 { fill: var(--color2); }
-.hexa-22 { fill: var(--color3); }
-.hexa-23 { fill: var(--color4); }
-.hexa-24 { fill: var(--color4); }
-.hexa-25 { fill: var(--color3); }
-.hexa-26 { fill: var(--color2); }
-.hexa-27 { fill: var(--color3); }
-.hexa-28 { fill: var(--color3); }
-.hexa-29 { fill: var(--color3); }
-.hexa-30 { fill: var(--color2); }
-.hexa-31 { fill: var(--color1); }
-.hexa-32 { fill: var(--color2); }
-.hexa-33 { fill: var(--color2); }
-.hexa-34 { fill: var(--color2); }
-.hexa-35 { fill: var(--color2); }
+    *{
+        --hexa-color1: rgb(0, 0, 255);
+        --hexa-color2: rgb(50, 50, 205);
+        --hexa-color3: rgb(100, 100, 155);
+        --hexa-color4: rgb(150, 150, 105);
+        --hexa-color5: rgb(200, 200, 55);
+    }
+    .hexa-1 { fill: var(--hexa-color1); }
+    .hexa-2 { fill: var(--hexa-color2); }
+    .hexa-3 { fill: var(--hexa-color2); }
+    .hexa-4 { fill: var(--hexa-color2); }
+    .hexa-5 { fill: var(--hexa-color2); }
+    .hexa-6 { fill: var(--hexa-color2); }
+    .hexa-7 { fill: var(--hexa-color3); }
+    .hexa-8 { fill: var(--hexa-color3); }
+    .hexa-9 { fill: var(--hexa-color3); }
+    .hexa-10 { fill: var(--hexa-color2); }
+    .hexa-11 { fill: var(--hexa-color2); }
+    .hexa-12 { fill: var(--hexa-color3); }
+    .hexa-13 { fill: var(--hexa-color4); }
+    .hexa-14 { fill: var(--hexa-color4); }
+    .hexa-15 { fill: var(--hexa-color3); }
+    .hexa-16 { fill: var(--hexa-color3); }
+    .hexa-17 { fill: var(--hexa-color4); }
+    .hexa-18 { fill: var(--hexa-color5); }
+    .hexa-19 { fill: var(--hexa-color4); }
+    .hexa-20 { fill: var(--hexa-color3); }
+    .hexa-21 { fill: var(--hexa-color2); }
+    .hexa-22 { fill: var(--hexa-color3); }
+    .hexa-23 { fill: var(--hexa-color4); }
+    .hexa-24 { fill: var(--hexa-color4); }
+    .hexa-25 { fill: var(--hexa-color3); }
+    .hexa-26 { fill: var(--hexa-color2); }
+    .hexa-27 { fill: var(--hexa-color3); }
+    .hexa-28 { fill: var(--hexa-color3); }
+    .hexa-29 { fill: var(--hexa-color3); }
+    .hexa-30 { fill: var(--hexa-color2); }
+    .hexa-31 { fill: var(--hexa-color1); }
+    .hexa-32 { fill: var(--hexa-color2); }
+    .hexa-33 { fill: var(--hexa-color2); }
+    .hexa-34 { fill: var(--hexa-color2); }
+    .hexa-35 { fill: var(--hexa-color2); }
     </style>
 
-    <g transform="translate(-10, -45)" stroke-width="5"  stroke="grey">
+    <g transform="translate(-10, -45)" stroke-width="5"  stroke="black">
         <g transform="translate(0, 0)">
             <g transform="translate(-45, 0)">
                 <polygon points="50,1 95,25 95,75 50,99 5,75 5,25" fill="none" class="hexa-1" />
